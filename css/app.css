@@ -1,0 +1,200 @@
+
+/**********/
+/* COMMON */
+/**********/
+
+body {
+  font-size: 20px;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+h2 {
+  color: #027180;
+  font-weight: 100;
+  font-size: 40px;
+}
+
+.link-cta {
+  color: #027180;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 300ms ease-out;
+}
+.link-cta:hover, .link-cta:focus, .link-cta:hover, .link-cta:focus {
+  color: #000000;
+}
+
+/**********/
+/* HEADER */
+/**********/
+
+/* NON-RETINA MOBILE */
+.hero {
+  background:url('../img/bg-small.png') no-repeat center center;
+}
+
+/* RETINA MOBILE */
+@media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi){ 
+  .hero {
+	background:url('../img/bg-small@2x.png') no-repeat center center;
+  }
+}
+
+/* NON-RETINA NON-MOBILE */
+@media only screen and (min-width: 40.063em) {
+  .hero {
+  	background:url('../img/bg-large.png') no-repeat center center;
+  }
+}
+/* RETINA NON-MOBILE */
+@media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-width: 40.063em) { 
+  .hero {
+	background:url('../img/bg-large@2x.png') no-repeat center center;
+  }
+}
+
+.hero {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: auto;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.slogan {
+  font-size: 75px;
+  font-weight: 100;
+  padding-top: 25vh;
+  display: block;
+  letter-spacing: -2px;
+  line-height: 75px;
+}
+
+.ingress {
+  font-size: 28px;
+  font-weight: 100;
+  margin-top: 40px;
+  max-width: 1000px;
+  line-height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0px;
+}
+
+/* NON-MOBILE MEDIUM HEIGHT */
+@media only screen and (min-height: 675px) and (min-width: 40.063em) {
+  .hero {
+  	height: 95vh;
+  }
+  .hero .slogan {
+	padding-top: 25vh;
+  }
+}
+
+/* NON-MOBILE LARGE HEIGHT */
+@media only screen and (min-height: 750px) and (min-width: 40.063em) {
+  .hero .slogan {
+	padding-top: 32vh;
+  }
+}
+
+/*********************/
+/* MAIN CONTENT AREA */
+/*********************/
+
+.main {
+  color: black;
+  text-align: center;
+  height: auto;
+}
+
+.btn-contact {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  border: 1px solid;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  padding: 28px 70px 28px 70px;
+}
+
+.section {
+  min-height: 700px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.section.wrapper-embedded {
+  background-color: #F4F4F4;
+}
+
+.embedded {
+  margin: 40px 40px 40px 40px;
+  background: #FFFFFF;
+}
+
+.embedded .underline {
+  border-bottom: 4px solid #027180;
+}
+
+.embedded .description {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.embedded h2 {
+  display: block;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* MOBILE */
+.embedded {
+  padding: 70px 20px 70px 20px;
+}
+
+/* NON-RETINA NON-MOBILE */
+@media only screen and (min-width: 40.063em) {
+  .embedded {
+	padding: 70px 60px 70px 60px;
+  }
+}
+
+/**********/
+/* FOOTER */
+/**********/
+
+.footer {
+  background-color: #1C7988;
+  min-height: 200px;
+  color: #FFFFFF;
+  font-size: 15px;
+}
+
+.footer .address {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer .address a {
+  text-decoration: none;
+  color: #FFFFFF;
+}

@@ -1,10 +1,30 @@
+/************************/
+/* FOUNDATION OVERRIDES */
+/************************/
+
+body, button, .button {
+  font-family: "museo-sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 100;
+}
+
+body {
+  font-size: 20px;
+}
+
+.row {
+  max-width: none;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+  background-color: #1F5B65;
+}
 
 /**********/
 /* COMMON */
 /**********/
 
-body {
-  font-size: 20px;
+.font-strong {
+  font-weight: 500;
 }
 
 .font-bold {
@@ -136,9 +156,9 @@ h2 {
 }
 
 .section {
-  min-height: 700px;
   text-align: center;
-  margin-top: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section.wrapper-embedded {
@@ -176,6 +196,60 @@ h2 {
   .embedded {
 	padding: 70px 60px 70px 60px;
   }
+}
+
+/* SIGN UP */
+
+.section.wrapper-signup {
+  background-color: #1C7988;
+}
+
+.section.wrapper-signup h2, .wrapper-signup span { 
+  color: #FFFFFF;
+}
+
+.section.wrapper-signup h2 {
+  display: block;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mc_embed_signup {
+  margin-top: 40px;
+}
+
+#mc_embed_signup div.mce_inline_error {
+  background-color: #1C7988 !important;
+  color: #FFFFFF !important;
+  font-size: 15px;
+  max-width: 300px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#mce-success-response, #mce-error-response {
+  color: #FFFFFF !important;  
+}
+
+#mc_embed_signup div.mce_inline_error:before, #mce-error-response:before {
+  content: '!';
+  margin-right: 10px;
+  color: #EF3D47;
+}
+
+#mc_embed_signup_scroll {
+  max-width: 500px;  
+}
+
+#mc_embed_signup .mc-field-group #mce-EMAIL {
+  padding: 26px 20px 26px 20px;
+  border: 0;
+  width: 100%;
+}
+
+#mc-embedded-subscribe span {
+  border-radius: 25px;
 }
 
 /**********/

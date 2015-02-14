@@ -35,19 +35,28 @@ button:hover, button:focus, .button:hover, .button:focus {
   font-style: italic;
 }
 
-h2 {
+h1, h2 {
   color: #027180;
   font-weight: 100;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
   font-size: 40px;
 }
 
-.link-cta {
-  color: #027180;
-  font-weight: 700;
+a {
   text-decoration: none;
+  color: #027180;
   transition: color 300ms ease-out;
 }
-.link-cta:hover, .link-cta:focus, .link-cta:hover, .link-cta:focus {
+.link-cta {
+  font-weight: 700;
+}
+a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   color: #000000;
 }
 
@@ -191,10 +200,10 @@ h2 {
   padding: 70px 20px 70px 20px;
 }
 
-/* NON-RETINA NON-MOBILE */
+/* NON-MOBILE */
 @media only screen and (min-width: 40.063em) {
   .embedded {
-	padding: 70px 60px 70px 60px;
+	  padding: 70px 60px 70px 60px;
   }
 }
 
@@ -252,6 +261,12 @@ h2 {
   border-radius: 25px;
 }
 
+/* CONTACT */
+
+#contact img {
+  width: 250px;
+}
+
 /**********/
 /* FOOTER */
 /**********/
@@ -269,6 +284,5 @@ h2 {
 }
 
 .footer .address a {
-  text-decoration: none;
   color: #FFFFFF;
 }

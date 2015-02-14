@@ -138,7 +138,7 @@ h2 {
 }
 
 .btn-contact {
-  background-color: Transparent;
+  background-color: transparent;
   background-repeat:no-repeat;
   border: none;
   cursor:pointer;
@@ -162,7 +162,7 @@ h2 {
 }
 
 .section.wrapper-embedded {
-  background-color: #F4F4F4;
+  background:url('../img/bg-gray.png') repeat;
 }
 
 .embedded {

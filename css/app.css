@@ -8,7 +8,14 @@ body, button, .button {
 }
 
 body {
-  font-size: 20px;
+  font-size: 15px;
+}
+
+/* NON MOBILE */
+@media only screen and (min-width: 40.063em){
+  body {
+    font-size: 20px;
+  }
 }
 
 .row {
@@ -45,7 +52,18 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 30px;
+}
+
+/* NON MOBILE */
+@media only screen and (min-width: 40.063em){
+  h1 {
+    font-size: 65px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }  
 }
 
 a {
@@ -72,7 +90,7 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 /* RETINA MOBILE */
 @media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi){ 
   .hero {
-	background:url('../img/bg-small@2x.png') no-repeat center center;
+	  background:url('../img/bg-small@2x.png') no-repeat center center;
   }
 }
 
@@ -82,11 +100,32 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   	background:url('../img/bg-large.png') no-repeat center center;
   }
 }
-/* RETINA NON-MOBILE */
-@media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-width: 40.063em) { 
+
+/* RETINA OR REALLY WIDE AND NON-MOBILE */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-width: 40.063em), only screen and (min-width: 1400px) { 
   .hero {
-	background:url('../img/bg-large@2x.png') no-repeat center center;
+	  background:url('../img/bg-large@2x.png') no-repeat center center;
   }
+}
+
+.hero .slogan {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.hero .ingress {
+  font-size: 20px;
+}
+
+/* NON MOBILE */
+@media only screen and (min-width: 40.063em){
+  .hero .slogan {
+    font-size: 75px;
+    line-height: 75px;
+  }
+  .hero .ingress {
+    font-size: 28px;
+  }  
 }
 
 .hero {
@@ -100,12 +139,10 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 }
 
 .slogan {
-  font-size: 75px;
   font-weight: 100;
   padding-top: 25vh;
   display: block;
   letter-spacing: -2px;
-  line-height: 75px;
 }
 
 .ingress {
@@ -162,6 +199,8 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   margin-top: 80px;
   margin-bottom: 40px;
   padding: 28px 70px 28px 70px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .section {
@@ -175,8 +214,15 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 }
 
 .embedded {
-  margin: 40px 40px 40px 40px;
+  margin: 40px 5px 40px 5px;
   background: #FFFFFF;
+}
+
+/* NON MOBILE */
+@media only screen and (min-width: 40.063em){
+  .embedded {
+    margin: 40px 40px 40px 40px;
+  }
 }
 
 .embedded .underline {
@@ -267,12 +313,37 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   width: 250px;
 }
 
+#contact-people .columns {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+#contact-people h2 {
+  margin-bottom: 0;
+}
+
+#contact-people {
+  margin-bottom: 40px;
+}
+
+/* NON-MOBILE */
+@media only screen and (min-width: 40.063em) {
+  #contact-people .columns {
+    border-right: 1px solid #40929F;
+  }
+  #contact-people .columns:last-child {
+    border-right: none;    
+  }
+}
+
+/* SOCIAL MEDIA */
+
 /*
 Make the Facebook Like box responsive (fluid width)
 https://developers.facebook.com/docs/reference/plugins/like-box/
 */
  
-/* This element holds injected scripts inside iframes that in some cases may stretch layouts. So, we're just hiding it. */
+ /* This element holds injected scripts inside iframes that in some cases may stretch layouts. So, we're just hiding it. */
 #fb-root {
   display: none;
 }
@@ -280,6 +351,7 @@ https://developers.facebook.com/docs/reference/plugins/like-box/
 /* To fill the container and nothing else */
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
   width: 100% !important;
+  max-width: 520px !important;
 }
 
 /**********/

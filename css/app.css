@@ -52,7 +52,7 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 /* NON MOBILE */
@@ -265,6 +265,8 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 
 .section.wrapper-signup {
   background-color: #1C7988;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .section.wrapper-signup h2, .wrapper-signup span { 

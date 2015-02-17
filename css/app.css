@@ -26,6 +26,55 @@ button:hover, button:focus, .button:hover, .button:focus {
   background-color: #1F5B65;
 }
 
+/************************/
+/* FONTS                */
+/************************/
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot?-5ctky');
+  src:url('../fonts/icomoon.eot?#iefix-5ctky') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?-5ctky') format('woff'),
+    url('../fonts/icomoon.ttf?-5ctky') format('truetype'),
+    url('../fonts/icomoon.svg?-5ctky#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logo-fill:before {
+  content: "\e600";
+}
+
+.icon-logo:before {
+  content: "\e601";
+}
+
+.icon-name:before {
+  content: "\e604";
+}
+
+.icon-logo-fill-name:before {
+  content: "\e606";
+}
+
+.icon-logo-interior:before {
+  content: "\e608";
+}
+
 /**********/
 /* COMMON */
 /**********/
@@ -82,6 +131,18 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 /* HEADER */
 /**********/
 
+.logo {
+  text-align: left;
+  font-size: 150px;
+  margin-top: -60px;
+  height: 145px;
+  position: absolute;
+  color: #027180;
+  padding-left: 5vw;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
 /* NON-RETINA MOBILE */
 .hero {
   background:url('../img/bg-small.png') no-repeat center center;
@@ -119,6 +180,15 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 
 /* NON MOBILE */
 @media only screen and (min-width: 40.063em){
+
+  .logo {
+    font-size: 200px;
+    height: auto;
+    color: #FFFFFF;
+    width: auto;
+    background-color: transparent;
+  }
+
   .hero .slogan {
     font-size: 75px;
     line-height: 75px;

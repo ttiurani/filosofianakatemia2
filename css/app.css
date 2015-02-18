@@ -7,12 +7,18 @@ body, button, .button {
   font-weight: 100;
 }
 
+html, body {
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+  height:100%;  
+}
+
 body {
   font-size: 15px;
 }
 
 /* NON MOBILE */
-@media only screen and (min-width: 40.063em){
+@media only screen and (min-width: 64.063em){
   body {
     font-size: 20px;
   }
@@ -97,7 +103,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 h2 {
@@ -105,7 +111,7 @@ h2 {
 }
 
 /* NON MOBILE */
-@media only screen and (min-width: 40.063em){
+@media only screen and (min-width: 64.063em){
   h1 {
     font-size: 65px;
   }
@@ -133,14 +139,15 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 
 .logo {
   text-align: left;
-  font-size: 150px;
-  margin-top: -60px;
-  height: 145px;
+  font-size: 100px;
+  margin-top: -40px;
+  height: 95px;
   position: absolute;
   color: #027180;
   padding-left: 5vw;
   background-color: #FFFFFF;
   width: 100%;
+  z-index: 1;
 }
 
 /* NON-RETINA MOBILE */
@@ -156,14 +163,14 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 }
 
 /* NON-RETINA NON-MOBILE */
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 64.063em) {
   .hero {
   	background:url('../img/bg-large.png') no-repeat center center;
   }
 }
 
 /* RETINA OR REALLY WIDE AND NON-MOBILE */
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-width: 40.063em), only screen and (min-width: 1400px) { 
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-width: 64.063em), only screen and (min-width: 1400px) { 
   .hero {
 	  background:url('../img/bg-large@2x.png') no-repeat center center;
   }
@@ -179,8 +186,7 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 }
 
 /* NON MOBILE */
-@media only screen and (min-width: 40.063em){
-
+@media only screen and (min-width: 64.063em){
   .logo {
     font-size: 200px;
     height: auto;
@@ -227,7 +233,7 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 }
 
 /* NON-MOBILE MEDIUM HEIGHT */
-@media only screen and (min-height: 675px) and (min-width: 40.063em) {
+@media only screen and (min-height: 675px) and (min-width: 64.063em) {
   .hero {
   	height: 95vh;
   }
@@ -237,7 +243,7 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 }
 
 /* NON-MOBILE LARGE HEIGHT */
-@media only screen and (min-height: 750px) and (min-width: 40.063em) {
+@media only screen and (min-height: 750px) and (min-width: 64.063em) {
   .hero .slogan {
 	padding-top: 32vh;
   }
@@ -266,7 +272,7 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 4px;
-  margin-top: 80px;
+  margin-top: 30px;
   margin-bottom: 40px;
   padding: 28px 50px 28px 50px;
   margin-left: 10px;
@@ -274,8 +280,9 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 }
 
 /* NON MOBILE */
-@media only screen and (min-width: 40.063em){
+@media only screen and (min-width: 64.063em){
   .btn-contact {
+    margin-top: 80px;
     font-size: 20px;
     padding: 28px 70px 28px 70px;
   }
@@ -283,8 +290,6 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 
 .section {
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .section.wrapper-embedded {
@@ -297,7 +302,7 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 }
 
 /* NON MOBILE */
-@media only screen and (min-width: 40.063em){
+@media only screen and (min-width: 64.063em){
   .embedded {
     margin: 40px 40px 40px 40px;
   }
@@ -325,7 +330,7 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 }
 
 /* NON-MOBILE */
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 64.063em) {
   .embedded {
 	  padding: 70px 60px 70px 60px;
   }
@@ -337,6 +342,8 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   background-color: #1C7988;
   padding-left: 5px;
   padding-right: 5px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section.wrapper-signup h2, .wrapper-signup span { 
@@ -398,7 +405,7 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 }
 
 #contact-people .columns {
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 20px;
 }
 
@@ -411,8 +418,9 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 }
 
 /* NON-MOBILE */
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 64.063em) {
   #contact-people .columns {
+    padding-top: 50px;
     border-right: 1px solid #40929F;
   }
   #contact-people .columns:last-child {

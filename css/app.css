@@ -315,7 +315,15 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 /* NON MOBILE */
 @media only screen and (min-width: 64.063em){
   .embedded {
-    margin: 40px 40px 40px 40px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  .columns:first-child .embedded {
+    margin-left: 4.5vw;
+    margin-right: 10px;
+  }
+  .columns:last-child .embedded {
+    margin-right: 4.5vw;
   }
 }
 
@@ -444,6 +452,9 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   }
   #contact-people .columns:last-child {
     border-right: none;    
+  }
+  #contact-people {
+    margin-bottom: 100px;
   }
 }
 

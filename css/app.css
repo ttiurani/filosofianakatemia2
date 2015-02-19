@@ -108,6 +108,7 @@ h1 {
 
 h2 {
   font-size: 25px;
+  line-height: 28px;
 }
 
 /* NON MOBILE */
@@ -117,7 +118,8 @@ h2 {
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 32px;
+    line-height: 38px;
   }  
 }
 
@@ -136,19 +138,6 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 /**********/
 /* HEADER */
 /**********/
-
-.logo {
-  text-align: left;
-  font-size: 100px;
-  margin-top: -40px;
-  height: 95px;
-  position: absolute;
-  color: #027180;
-  padding-left: 5vw;
-  background-color: #FFFFFF;
-  width: 100%;
-  z-index: 1;
-}
 
 /* NON-RETINA MOBILE */
 .hero {
@@ -176,6 +165,19 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   }
 }
 
+.logo {
+  text-align: left;
+  font-size: 100px;
+  margin-top: -40px;
+  height: 95px;
+  position: absolute;
+  color: #027180;
+  padding-left: 10px;
+  background-color: #FFFFFF;
+  width: 100%;
+  z-index: 1;
+}
+
 .hero .slogan {
   font-size: 45px;
   line-height: 45px;
@@ -193,6 +195,7 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
     color: #FFFFFF;
     width: auto;
     background-color: transparent;
+    padding-left: 5vw;
   }
 
   .hero .slogan {
@@ -212,6 +215,8 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   height: auto;
   color: #FFFFFF;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .slogan {
@@ -296,9 +301,14 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   background:url('../img/bg-gray.png') repeat;
 }
 
+
 .embedded {
-  margin: 40px 5px 40px 5px;
+  margin: 20px 5px 0px 5px;
   background: #FFFFFF;
+}
+
+.wrapper-embedded .columns:last-child .embedded {
+  margin-bottom: 20px;
 }
 
 /* NON MOBILE */
@@ -326,7 +336,7 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 
 /* MOBILE */
 .embedded {
-  padding: 70px 20px 70px 20px;
+  padding: 20px 10px 20px 10px;
 }
 
 /* NON-MOBILE */
@@ -340,8 +350,8 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 
 .section.wrapper-signup {
   background-color: #1C7988;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -409,6 +419,10 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   padding-bottom: 20px;
 }
 
+#contact-people .columns:first-child {
+  padding-top: 0px;  
+}
+
 #contact-people h2 {
   margin-bottom: 0;
 }
@@ -419,7 +433,7 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 
 /* NON-MOBILE */
 @media only screen and (min-width: 64.063em) {
-  #contact-people .columns {
+  #contact-people .columns, #contact-people .columns:first-child {
     padding-top: 50px;
     border-right: 1px solid #40929F;
   }
@@ -454,7 +468,7 @@ https://developers.facebook.com/docs/reference/plugins/like-box/
   background-color: #1C7988;
   min-height: 200px;
   color: #FFFFFF;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .footer .address {

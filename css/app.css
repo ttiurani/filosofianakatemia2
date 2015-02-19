@@ -18,8 +18,15 @@ body {
   color: #000000;
 }
 
-/* NON MOBILE */
+/* LARGE */
 @media only screen and (min-width: 64.063em){
+  body {
+    font-size: 16px;
+  }
+}
+
+/* EXTRA LARGE */
+@media only screen and (min-width: 90.063em){
   body {
     font-size: 20px;
   }
@@ -112,15 +119,27 @@ h2 {
   line-height: 28px;
 }
 
-/* NON MOBILE */
+/* LARGE */
 @media only screen and (min-width: 64.063em){
   h1 {
-    font-size: 65px;
+    font-size: 52px;
   }
 
   h2 {
     font-size: 32px;
     line-height: 38px;
+  }  
+}
+
+/* EXTRA LARGE */
+@media only screen and (min-width: 90.063em){
+  h1 {
+    font-size: 65px;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 46px;
   }  
 }
 
@@ -166,48 +185,6 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   }
 }
 
-.logo {
-  text-align: left;
-  font-size: 100px;
-  margin-top: -40px;
-  height: 95px;
-  position: absolute;
-  color: #027180;
-  padding-left: 10px;
-  background-color: #FFFFFF;
-  width: 100%;
-  z-index: 1;
-}
-
-.hero .slogan {
-  font-size: 45px;
-  line-height: 45px;
-}
-
-.hero .ingress {
-  font-size: 20px;
-}
-
-/* NON MOBILE */
-@media only screen and (min-width: 64.063em){
-  .logo {
-    font-size: 200px;
-    height: auto;
-    color: #FFFFFF;
-    width: auto;
-    background-color: transparent;
-    padding-left: 5vw;
-  }
-
-  .hero .slogan {
-    font-size: 75px;
-    line-height: 75px;
-  }
-  .hero .ingress {
-    font-size: 28px;
-  }  
-}
-
 .hero {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -231,11 +208,65 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   font-size: 28px;
   font-weight: 100;
   margin-top: 40px;
-  max-width: 1000px;
   line-height: 30px;
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 0px;
+}
+
+.logo {
+  text-align: left;
+  font-size: 100px;
+  margin-top: -40px;
+  height: 95px;
+  position: absolute;
+  color: #027180;
+  padding-left: 10px;
+  background-color: #FFFFFF;
+  width: 100%;
+  z-index: 1;
+}
+
+.hero .slogan {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.hero .ingress {
+  font-size: 20px;
+}
+
+/* LARGE */
+@media only screen and (min-width: 64.063em){
+  .logo {
+    font-size: 160px;
+    height: auto;
+    color: #FFFFFF;
+    width: auto;
+    background-color: transparent;
+    padding-left: 5vw;
+  }
+
+  .hero .slogan {
+    font-size: 52px;
+    line-height: 55px;
+  }
+  .hero .ingress {
+    font-size: 22px;
+    max-width: 800px;
+  }
+}
+
+/* EXTRA LARGE */
+@media only screen and (min-width: 90.063em){
+  .hero .slogan {
+    font-size: 75px;
+    line-height: 80px;
+  }
+  .hero .ingress {
+    font-size: 28px;
+    max-width: 1000px;
+  }
 }
 
 /* NON-MOBILE MEDIUM HEIGHT */
@@ -244,25 +275,17 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   	height: 95vh;
   }
   .hero .slogan {
-	padding-top: 25vh;
+	  padding-top: 25vh;
   }
 }
 
 /* NON-MOBILE LARGE HEIGHT */
 @media only screen and (min-height: 750px) and (min-width: 64.063em) {
   .hero .slogan {
-	padding-top: 32vh;
+	  padding-top: 32vh;
   }
 }
 
-/*********************/
-/* MAIN CONTENT AREA */
-/*********************/
-
-.main {
-  text-align: center;
-  height: auto;
-}
 
 .btn-contact {
   background-color: transparent;
@@ -284,13 +307,29 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   margin-right: 10px;
 }
 
-/* NON MOBILE */
+/* LARGE */
 @media only screen and (min-width: 64.063em){
   .btn-contact {
     margin-top: 80px;
-    font-size: 20px;
+    font-size: 14px;
     padding: 28px 70px 28px 70px;
   }
+}
+
+/* EXTRA LARGE */
+@media only screen and (min-width: 90.063em){
+  .btn-contact {
+    font-size: 20px;
+  }
+}
+
+/*********************/
+/* MAIN CONTENT AREA */
+/*********************/
+
+.main {
+  text-align: center;
+  height: auto;
 }
 
 .section {
@@ -371,10 +410,24 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 
 .section.wrapper-signup h2 {
   display: block;
-  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
+
+/* LARGE */
+@media only screen and (min-width: 64.063em){
+  .section.wrapper-signup h2 {
+    max-width: 800px;
+  }
+}
+
+/* EXTRA LARGE */
+@media only screen and (min-width: 90.063em){
+  .section.wrapper-signup h2 {
+    max-width: 1000px;
+  }
+}
+
 
 #mc_embed_signup {
   margin-top: 40px;
@@ -446,6 +499,9 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 
 /* NON-MOBILE */
 @media only screen and (min-width: 64.063em) {
+  #contact h1 {
+    margin-top: 60px;
+  }
   #contact-people .columns, #contact-people .columns:first-child {
     padding-top: 50px;
     border-right: 1px solid #40929F;

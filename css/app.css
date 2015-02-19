@@ -239,7 +239,8 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 /* LARGE */
 @media only screen and (min-width: 64.063em){
   .logo {
-    font-size: 160px;
+    font-size: 130px;
+    padding-top: 20px;
     height: auto;
     color: #FFFFFF;
     width: auto;
@@ -259,6 +260,10 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 
 /* EXTRA LARGE */
 @media only screen and (min-width: 90.063em){
+  .logo {
+    padding-top: 0px;
+    font-size: 180px;
+  }
   .hero .slogan {
     font-size: 75px;
     line-height: 80px;
@@ -275,17 +280,9 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   	height: 95vh;
   }
   .hero .slogan {
-	  padding-top: 25vh;
+	  padding-top: 31vh;
   }
 }
-
-/* NON-MOBILE LARGE HEIGHT */
-@media only screen and (min-height: 750px) and (min-width: 64.063em) {
-  .hero .slogan {
-	  padding-top: 32vh;
-  }
-}
-
 
 .btn-contact {
   background-color: transparent;
@@ -312,7 +309,7 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   .btn-contact {
     margin-top: 80px;
     font-size: 14px;
-    padding: 28px 70px 28px 70px;
+    padding: 22px 70px 22px 70px;
   }
 }
 

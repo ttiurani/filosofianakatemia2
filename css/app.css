@@ -381,6 +381,10 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   margin-right: auto !important;
 }
 
+#mce-responses {
+  display: inline-block;
+}
+
 #mce-success-response, #mce-error-response {
   color: #FFFFFF !important;  
 }

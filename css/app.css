@@ -189,8 +189,11 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   box-shadow: 0 0 0 1px #027180, 0 7px 0 1px #027180, 0 14px 0 1px #027180;
 }
 
-.top-bar .logo {
+.top-bar .logo a{
   color: #027180;
+}
+
+.top-bar .logo {
   padding-left: 10px;
 }
 
@@ -208,8 +211,10 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   .top-bar .title-area {
     min-height: 150px;
   }
-  .top-bar .logo {
+  .top-bar .logo a {
     color: #FFFFFF;
+  }
+  .top-bar .logo {
     padding-left: 5vw;
   }
 

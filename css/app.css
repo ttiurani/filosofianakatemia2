@@ -2,24 +2,33 @@
 /* FOUNDATION OVERRIDES */
 /************************/
 
-body, button, .button {
+body, button, .button, .top-bar-section ul li > a {
   font-family: "museo-sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: 100;
 }
 
-html, body {
-  overflow-y: scroll; /* has to be scroll, not auto */
-  -webkit-overflow-scrolling: touch;
-  height:100%;  
+body {
+  height: 100%;
+}
+
+html {
+  /* Disable overflow-y in mobile to get momentum scrolling to work */
+  overflow-y: hidden;
 }
 
 body {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   font-size: 15px;
   color: #000000;
 }
 
 /* LARGE */
 @media only screen and (min-width: 64.063em){
+  html {
+    /* Set overflow-y to initial to get animated scroll to work in desktop */
+    overflow-y: initial;
+  }
   body {
     font-size: 16px;
   }
@@ -36,7 +45,7 @@ body {
   max-width: none;
 }
 
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover, button:focus, .button:hover, .button:focus, .top-bar-section ul > li.active > a {
   background-color: #1F5B65;
 }
 
@@ -128,7 +137,7 @@ h2 {
   h2 {
     font-size: 32px;
     line-height: 38px;
-  }  
+  }
 }
 
 /* EXTRA LARGE */
@@ -140,7 +149,7 @@ h2 {
   h2 {
     font-size: 40px;
     line-height: 46px;
-  }  
+  }
 }
 
 a {
@@ -155,9 +164,103 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   color: #000000;
 }
 
-/**********/
-/* HEADER */
-/**********/
+/******************/
+/* NAVIGATION BAR */
+/******************/
+
+.top-bar{
+  position: absolute;
+  width: 100%;
+  min-height: 50px;
+  z-index: 1;
+  background-color: #FFFFFF
+}
+
+.top-bar.expanded .title-area{
+  background-color: #FFFFFF;
+}
+
+.top-bar .title-area{
+  min-height: 50px;
+  padding-left: 0;
+}
+
+.top-bar .toggle-topbar.menu-icon > a > span:after {
+  box-shadow: 0 0 0 1px #027180, 0 7px 0 1px #027180, 0 14px 0 1px #027180;
+}
+
+.top-bar .logo {
+  color: #027180;
+  padding-left: 10px;
+}
+
+.top-bar .logo span:before {
+  font-size: 100px;
+}
+
+/* MEDIUM */
+@media only screen and (min-width: 40.063em){
+  .top-bar{
+    background-color: transparent;
+    padding-top: 50px;
+    min-height: 150px;
+  }
+  .top-bar .title-area {
+    min-height: 150px;
+  }
+  .top-bar .logo {
+    color: #FFFFFF;
+    padding-left: 5vw;
+  }
+
+  .top-bar > .top-bar-section li, .top-bar > .top-bar-section li a {
+    background-color: transparent !important;
+  }
+
+  .top-bar > .top-bar-section li a {
+    font-size: 17px;
+  }
+
+  .top-bar-section li.active{
+    border-bottom: 6px solid #FFFFFF;
+  }
+
+  .top-bar > .top-bar-section li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .top-bar > .top-bar-section li:last-child {
+    margin-right: 0;
+  }
+}
+
+/* LARGE */
+@media only screen and (min-width: 64.063em){
+  .top-bar .logo span:before {
+    font-size: 130px;
+  }
+  .top-bar .top-bar-section {
+    padding-right: 5vw;
+  }
+  .top-bar > .top-bar-section li a {
+    font-size: 20px;
+  }
+}
+
+/* EXTRA LARGE */
+@media only screen and (min-width: 90.063em){
+  .top-bar .logo span:before {
+    font-size: 180px;
+  }
+  .top-bar > .top-bar-section li a {
+    font-size: 24px;
+  }
+}
+
+/*********/
+/* HERO  */
+/*********/
 
 /* NON-RETINA MOBILE */
 .hero {
@@ -165,23 +268,23 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 }
 
 /* RETINA MOBILE */
-@media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi){ 
+@media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi){
   .hero {
-	  background:url('../img/bg-small@2x.png') no-repeat center center;
+    background:url('../img/bg-small@2x.png') no-repeat center center;
   }
 }
 
 /* NON-RETINA NON-MOBILE */
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: 40.063em) {
   .hero {
-  	background:url('../img/bg-large.png') no-repeat center center;
+    background:url('../img/bg-large.png') no-repeat center center;
   }
 }
 
 /* RETINA OR REALLY WIDE AND NON-MOBILE */
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-width: 64.063em), only screen and (min-width: 1400px) { 
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-width: 64.063em), only screen and (min-width: 1400px) {
   .hero {
-	  background:url('../img/bg-large@2x.png') no-repeat center center;
+    background:url('../img/bg-large@2x.png') no-repeat center center;
   }
 }
 
@@ -214,19 +317,6 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   letter-spacing: 0px;
 }
 
-.logo {
-  text-align: left;
-  font-size: 100px;
-  margin-top: -40px;
-  height: 95px;
-  position: absolute;
-  color: #027180;
-  padding-left: 10px;
-  background-color: #FFFFFF;
-  width: 100%;
-  z-index: 1;
-}
-
 .hero .slogan {
   font-size: 45px;
   line-height: 45px;
@@ -238,16 +328,6 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 
 /* LARGE */
 @media only screen and (min-width: 64.063em){
-  .logo {
-    font-size: 130px;
-    padding-top: 20px;
-    height: auto;
-    color: #FFFFFF;
-    width: auto;
-    background-color: transparent;
-    padding-left: 5vw;
-  }
-
   .hero .slogan {
     font-size: 52px;
     line-height: 55px;
@@ -260,10 +340,6 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 
 /* EXTRA LARGE */
 @media only screen and (min-width: 90.063em){
-  .logo {
-    padding-top: 0px;
-    font-size: 180px;
-  }
   .hero .slogan {
     font-size: 75px;
     line-height: 80px;
@@ -274,13 +350,20 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   }
 }
 
+/* MEDIUM BUT SMALL HEIGHT */
+@media only screen and (max-height: 675px) and (min-width: 40.063em) {
+  .hero .slogan {
+    padding-top: 41vh;
+  }
+}
+
 /* NON-MOBILE MEDIUM HEIGHT */
 @media only screen and (min-height: 675px) and (min-width: 64.063em) {
   .hero {
-  	height: 95vh;
+    height: 95vh;
   }
   .hero .slogan {
-	  padding-top: 31vh;
+    padding-top: 31vh;
   }
 }
 
@@ -387,7 +470,7 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 /* NON-MOBILE */
 @media only screen and (min-width: 64.063em) {
   .embedded {
-	  padding: 70px 60px 70px 60px;
+    padding: 70px 60px 70px 60px;
   }
 }
 
@@ -401,7 +484,7 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   padding-bottom: 60px;
 }
 
-.section.wrapper-signup h2, .wrapper-signup span { 
+.section.wrapper-signup h2, .wrapper-signup span {
   color: #FFFFFF;
 }
 
@@ -442,11 +525,11 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   display: inline-block;
 }
 
-#mce-success-response, #mce-error-response {
-  color: #FFFFFF !important;  
+#mce-success-response, #mce-error-response {
+  color: #FFFFFF !important;
 }
 
-#mc_embed_signup div.mce_inline_error:before, #mce-error-response:before {
+#mc_embed_signup div.mce_inline_error:before, #mce-error-response:before {
   content: '!';
   margin-right: 10px;
   color: #EF3D47;
@@ -484,7 +567,7 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 }
 
 #contact-people .columns:first-child {
-  padding-top: 0px;  
+  padding-top: 0px;
 }
 
 #contact-people h2 {
@@ -505,7 +588,7 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
     border-right: 1px solid #40929F;
   }
   #contact-people .columns:last-child {
-    border-right: none;    
+    border-right: none;
   }
   #contact-people {
     margin-bottom: 100px;
@@ -518,12 +601,12 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 Make the Facebook Like box responsive (fluid width)
 https://developers.facebook.com/docs/reference/plugins/like-box/
 */
- 
+
  /* This element holds injected scripts inside iframes that in some cases may stretch layouts. So, we're just hiding it. */
 #fb-root {
   display: none;
 }
- 
+
 /* To fill the container and nothing else */
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
   width: 100% !important;

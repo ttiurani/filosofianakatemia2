@@ -55,11 +55,11 @@ button:hover, button:focus, .button:hover, .button:focus, .top-bar-section ul > 
 
 @font-face {
   font-family: 'icomoon';
-  src:url('../fonts/icomoon.eot?v81f8u');
-  src:url('../fonts/icomoon.eot?#iefixv81f8u') format('embedded-opentype'),
-    url('../fonts/icomoon.woff?v81f8u') format('woff'),
-    url('../fonts/icomoon.ttf?v81f8u') format('truetype'),
-    url('../fonts/icomoon.svg?v81f8u#icomoon') format('svg');
+  src:url('../fonts/icomoon.eot?yaiwpr');
+  src:url('../fonts/icomoon.eot?#iefixyaiwpr') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?yaiwpr') format('woff'),
+    url('../fonts/icomoon.ttf?yaiwpr') format('truetype'),
+    url('../fonts/icomoon.svg?yaiwpr#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -76,6 +76,18 @@ button:hover, button:focus, .button:hover, .button:focus, .top-bar-section ul > 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-smk-horizontal:before {
+  content: "\e60c";
+}
+
+.icon-smk-vertical:before {
+  content: "\e60d";
+}
+
+.icon-vvv:before {
+  content: "\e60e";
 }
 
 .icon-smk-quote:before {
@@ -488,15 +500,6 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   margin-right: 10px;
 }
 
-.btn-contact.inverse {
-  background-color: #027180;
-  color:#FFFFFF;
-}
-
-.btn-contact.inverse:hover, .button.inverse:focus {
-  background-color: #042C38;
-}
-
 /* LARGE */
 @media only screen and (min-width: 64.063em){
   .btn-contact {
@@ -758,11 +761,35 @@ https://developers.facebook.com/docs/reference/plugins/like-box/
   font-size: 150px;
 }
 
+#vvv .icon-vvv:before {
+  position: relative;
+  color: #0C7C8B;
+  top: 30px;
+  font-size: 250px;
+}
+
+#smk .icon-smk-vertical:before{
+  position: relative;
+  color: #0C7C8B;
+  top: 30px;
+  font-size: 650px;
+}
+
+#smk .icon-smk-horizontal:before{
+  position: relative;
+  color: #0C7C8B;
+  top: 30px;
+  font-size: 250px;
+}
+
 /* LARGE */
 @media only screen and (min-width: 64.063em){
   #smk-quote .icon-smk-quote:before {
     top: 30px;
     font-size: 300px;
+  }
+  #vvv .icon-vvv:before {
+    font-size: 450px;
   }
 }
 
@@ -771,6 +798,11 @@ https://developers.facebook.com/docs/reference/plugins/like-box/
   #smk-quote .icon-smk-quote:before {
     top: 40px;
     font-size: 360px;
+  }
+
+  #vvv .icon-vvv:before {
+    top: 40px;
+    font-size: 550px;
   }
 }
 
@@ -785,6 +817,9 @@ https://developers.facebook.com/docs/reference/plugins/like-box/
   margin-bottom: 0;
 }
 
+#smk-bottom #more {
+  margin-top: 40px;
+}
 
 /* RESEARCH */
 

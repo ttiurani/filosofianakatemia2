@@ -367,13 +367,11 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 }
 
 #services .hero {
-  /* FIXME*/
-  background-image: url('../img/bg-front-small.png');
+  background-image: url('../img/bg-services-small.png');
 }
 
 #research .hero {
-  /* FIXME*/
-  background-image: url('../img/bg-front-small.png');
+  background-image: url('../img/bg-research-small.png');
 }
 
 #people .hero {
@@ -388,13 +386,11 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   }
 
   #services .hero {
-    /* FIXME*/
-    background-image: url('../img/bg-front-small@2x.png');
+    background-image: url('../img/bg-services-small@2x.png');
   }
 
   #research .hero {
-    /* FIXME*/
-    background-image: url('../img/bg-front-small@2x.png');
+    background-image: url('../img/bg-research-small@2x.png');
   }
 }
 
@@ -405,13 +401,11 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   }
 
   #services .hero {
-    /* FIXME*/
-    background-image: url('../img/bg-front-large.png');
+    background-image: url('../img/bg-services-large.png');
   }
 
   #research .hero {
-    /* FIXME*/
-    background-image: url('../img/bg-front-large.png');
+    background-image: url('../img/bg-research-large.png');
   }  
 }
 
@@ -422,13 +416,11 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   }
 
   #services .hero {
-    /* FIXME*/
-    background-image: url('../img/bg-front-large@2x.png');
+    background-image: url('../img/bg-services-large@2x.png');
   }
 
   #research .hero {
-    /* FIXME*/
-    background-image: url('../img/bg-front-large@2x.png');
+    background-image: url('../img/bg-research-large@2x.png');
   }  
 }
 

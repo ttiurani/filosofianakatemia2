@@ -158,7 +158,7 @@ button:hover, button:focus, .button:hover, .button:focus, .top-bar-section ul > 
   text-align: left;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   color: #027180;
   font-weight: 100;
 }
@@ -177,6 +177,11 @@ h3 {
   line-height: 24px;
 }
 
+h4 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
 /* LARGE */
 @media only screen and (min-width: 64.063em){
   h1 {
@@ -190,6 +195,10 @@ h3 {
   h3 {
     font-size: 28px;
     line-height: 31px;
+  }
+  h4 {
+    font-size: 23px;
+    line-height: 25px;
   }
 }
 
@@ -207,6 +216,11 @@ h3 {
   h3 {
     font-size: 34px;
     line-height: 38px;
+  }
+
+  h4 {
+    font-size: 30px;
+    line-height: 33px;
   }
 }
 
@@ -872,6 +886,114 @@ https://developers.facebook.com/docs/reference/plugins/like-box/
   }
   #projects .row:last-child .columns .embedded {
     margin-bottom: 150px;
+  }
+}
+
+/**********/
+/* PEOPLE */
+
+#thumbnails .picture {
+  background-repeat: no-repeat
+  background-attachment: center;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+#thumbnails #karoliina .picture {
+  background-image: url('../img/karoliina-small.jpg');
+}
+#thumbnails #sonja .picture {
+  background-image: url('../img/sonja-small.jpg');
+}
+#thumbnails #timo .picture {
+  background-image: url('../img/timo-small.jpg');
+}
+#thumbnails #villiam .picture {
+  background-image: url('../img/villiam-small.jpg');
+}
+#thumbnails #villiam .picture h2 {
+  color: #000000;  
+}
+#thumbnails #lauri .picture {
+  background-image: url('../img/lauri-small.jpg');
+}
+#thumbnails #tapani .picture {
+  background-image: url('../img/tapani-small.jpg');
+}
+#thumbnails #reima .picture {
+  background-image: url('../img/reima-small.jpg');
+}
+#thumbnails #peter .picture {
+  background-image: url('../img/peter-small.jpg');
+}
+#thumbnails #joonas .picture {
+  background-image: url('../img/joonas-small.jpg');
+}
+#thumbnails #maria .picture {
+  background-image: url('../img/maria-small.jpg');
+}
+#thumbnails #frank .picture {
+  background-image: url('../img/frank-small.jpg');
+}
+#thumbnails #jp .picture {
+  background-image: url('../img/jp-small.jpg');
+}
+
+#thumbnails #santeri .picture {
+  background-image: url('../img/santeri-small.jpg');
+}
+
+#thumbnails {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#thumbnails h2, #thumbnails h4{
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#thumbnails h2.with-title {
+  bottom: 1.5em;
+}
+
+/* LARGE */
+@media only screen and (min-width: 64.063em){
+  #thumbnails {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  #thumbnails .picture {
+    height: 400px;
+  }
+
+  #thumbnails .section .columns .picture {
+    margin-right: 20px;
+  }
+
+  #thumbnails .section .columns:last-child .picture {
+    margin-right: 0;
+  }
+
+}
+
+/* EXTRA LARGE */
+@media only screen and (min-width: 90.063em){
+  #thumbnails .picture {
+    height: 550px;
   }
 }
 

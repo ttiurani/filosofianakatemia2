@@ -679,6 +679,16 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   padding-right: 20px;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-image: url('../img/bg-front-small.png');
+  background-repeat: no-repeat
+  background-attachment: center;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url('../img/bg-newsletter-small.jpg');
 }
 
 .section.wrapper-signup h2, .wrapper-signup span {
@@ -693,6 +703,9 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 
 /* LARGE */
 @media only screen and (min-width: 64.063em){
+  .section.wrapper-signup {
+    background-image: url('../img/bg-newsletter-large.jpg');
+  }
   .section.wrapper-signup h2 {
     max-width: 800px;
   }

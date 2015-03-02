@@ -49,6 +49,14 @@ button:hover, button:focus, .button:hover, .button:focus, .top-bar-section ul > 
   background-color: #1F5B65;
 }
 
+.icon-bar {
+  background: transparent;
+}
+
+.icon-bar .item a {
+  color: #FFFFFF;
+}
+
 /************************/
 /* FONTS                */
 /************************/
@@ -998,6 +1006,7 @@ https://developers.facebook.com/docs/reference/plugins/like-box/
   min-height: 200px;
   color: #FFFFFF;
   font-size: 14px;
+  padding-bottom: 40px;
 }
 
 .footer .address {
@@ -1007,4 +1016,10 @@ https://developers.facebook.com/docs/reference/plugins/like-box/
 
 .footer .address a {
   color: #FFFFFF;
+}
+
+.footer .icon-bar {
+  padding-top: 40px;
+  padding-left: 0;
+  font-size: 14px;
 }

@@ -285,7 +285,7 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 }
 
 .top-bar .logo {
-  margin-top: 2px;
+  padding-top: 2px;
   padding-left: 10px;
 }
 
@@ -315,7 +315,7 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   }
 
   .top-bar > .top-bar-section li a {
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .top-bar-section li.active, .top-bar-section li:hover, .top-bar-section li:focus{

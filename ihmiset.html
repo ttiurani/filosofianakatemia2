@@ -66,6 +66,9 @@
   <div class="hero">
     <div class="slogan">Me olemme Filosofian Akatemia</div>
     <div class="ingress">Ihmisten pit&auml;&auml; el&auml;&auml; hyv&auml;&auml; el&auml;m&auml;&auml;. Iso osa siit&auml; kuluu t&ouml;iss&auml;. Parhaimmillaan ty&ouml;nteko on mielek&auml;st&auml;, palkitsevaa ja merkityksellist&auml;. Filosofian Akatemia perustettiin meille unelmien ty&ouml;paikaksi ja sellainen siit&auml; tuli. Nyt autamme muita saavuttamaan saman. Teemme akateemista tutkimusta, josta uutamme mullistavia ty&ouml;kaluja inhimillisen hyvinvoinnin vahvistamiseen ja urautuneen ajattelun murtamiseen yrityksiss&auml;. Teemme ty&ouml;t&auml; valtavalla innolla.</div>
+    <a href="#thumbnails" class="scroll-down show-for-large-up">
+      <span class="text-scroll-down">VIERITÄ ALAS</span></br><span class="icon-arrow-down"></span>
+    </a>
   </div>
 
   <div id="thumbnails" class="main">
@@ -183,6 +186,21 @@
   <script type='text/javascript' src='sites/default/files/newfa/js/foundation.min.js'></script>
   <script>
     $(document).foundation();
+    $(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+            // Animation does not work with smooth scrolling, so disable scroll by default for mobile and tablet
+            if (screen && screen.width > 1025){
+              e.preventDefault();
+
+              var target = this.hash;
+              $target = $(target);
+
+              $('body').stop().animate({
+                  scrollTop:  parseInt($target.offset().top,10)
+              }, 900, 'swing');
+            }
+        });
+    });
   </script>
 </body>
 </html>

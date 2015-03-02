@@ -66,11 +66,13 @@
   <div class="hero">
     <div class="slogan">Ihmismielt&auml; ymm&auml;rt&auml;&auml; vain tutkimalla</div>
     <div class="ingress">Filosofian Akatemian tutkimushankkeet pureutuvat laaja-alaisesti el&auml;m&auml;n peruskysymyksiin: mit&auml; on hyv&auml; el&auml;m&auml;, ent&auml; mielek&auml;s ty&ouml;? Tutkimme ihmisten hyvinvointia ja kehit&auml;mme konkreettisia ratkaisuja ty&ouml;el&auml;m&auml;n tarpeisiin.</div>
+
+    <a href="#research-top" class="scroll-down show-for-large-up">
+      <span class="text-scroll-down">VIERITÄ ALAS</span></br><span class="icon-arrow-down"></span>
+    </a>
   </div>
-
   <div class="main">
-
-    <div class="section separate">
+    <div id="research-top" class="section separate">
       <div class="row">
         <div class="medium-10 medium-offset-1 end columns ingress">
           <p>Akateemisesti meritoituneet tutkijamme kehitt&auml;v&auml;t tekem&auml;ns&auml; tutkimuksen pohjalta  johtamisen tueksi ty&ouml;kaluja, jotka lis&auml;&auml;v&auml;t ty&ouml;ntekij&ouml;iden sis&auml;ist&auml; motivaatiota eli vapautta, virtausta ja vastuuta. Tutkimusten mukaan n&auml;m&auml; ihmisen perustarpeet huomioiva ty&ouml;kulttuuri lis&auml;&auml; tuottavuutta.</p>
@@ -140,6 +142,21 @@
   <script type='text/javascript' src='sites/default/files/newfa/js/foundation.min.js'></script>
   <script>
     $(document).foundation();
+    $(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+            // Animation does not work with smooth scrolling, so disable scroll by default for mobile and tablet
+            if (screen && screen.width > 1025){
+              e.preventDefault();
+
+              var target = this.hash;
+              $target = $(target);
+
+              $('body').stop().animate({
+                  scrollTop:  parseInt($target.offset().top,10)
+              }, 900, 'swing');
+            }
+        });
+    });
   </script>
 </body>
 </html>

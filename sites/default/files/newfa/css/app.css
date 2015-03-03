@@ -1075,6 +1075,10 @@ https://developers.facebook.com/docs/reference/plugins/like-box/
   bottom: 1.5em;
 }
 
+#thumbnails .picture {
+  cursor:pointer;
+}
+
 /* LARGE */
 @media only screen and (min-width: 64.063em){
   #thumbnails {

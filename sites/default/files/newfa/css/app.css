@@ -64,11 +64,11 @@ button:hover, button:focus, .button:hover, .button:focus, .top-bar-section ul > 
 
 @font-face {
   font-family: 'icomoon';
-  src:url('../fonts/icomoon.eot?yaiwpr');
-  src:url('../fonts/icomoon.eot?#iefixyaiwpr') format('embedded-opentype'),
-    url('../fonts/icomoon.woff?yaiwpr') format('woff'),
-    url('../fonts/icomoon.ttf?yaiwpr') format('truetype'),
-    url('../fonts/icomoon.svg?yaiwpr#icomoon') format('svg');
+  src:url('../fonts/icomoon.eot?-q3wmq5');
+  src:url('../fonts/icomoon.eot?#iefix-q3wmq5') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?-q3wmq5') format('woff'),
+    url('../fonts/icomoon.ttf?-q3wmq5') format('truetype'),
+    url('../fonts/icomoon.svg?-q3wmq5#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -85,6 +85,10 @@ button:hover, button:focus, .button:hover, .button:focus, .top-bar-section ul > 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-quote:before {
+  content: "\e60f";
 }
 
 .icon-smk-horizontal:before {
@@ -167,6 +171,10 @@ button:hover, button:focus, .button:hover, .button:focus, .top-bar-section ul > 
   text-align: left;
 }
 
+.right-aligned {
+  text-align: right;
+}
+
 h1, h2, h3, h4 {
   color: #027180;
   font-weight: 100;
@@ -243,7 +251,7 @@ a {
 
 }
 
-.link-cta .icon-arrow-right:before {
+.icon-arrow-right:before {
   font-size: 0.5em;
   vertical-align: baseline;
   position: relative;
@@ -253,6 +261,40 @@ a {
 
 a:hover, a:focus, .link-cta:hover, .link-cta:focus{
   color: #000000;
+}
+
+ul.list-plain, ul.list-link {
+  list-style-type: none;
+  padding-left:0;
+}
+ul.list-plain li:before {
+  content: '-';
+  margin-right: 5px;
+}
+
+
+ul.list-link li:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e604";
+
+  position:relative;
+  font-size: 0.5em;
+  margin-right: 5px;
+  bottom: 2px;
+}
+
+ul.list-link li a {
+  color: #636363;
 }
 
 /******************/
@@ -609,7 +651,7 @@ a:hover, a:focus, .link-cta:hover, .link-cta:focus{
 
 .section .ingress {
   font-size: 19px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
 }
 
 .embedded .description {
@@ -1058,6 +1100,79 @@ https://developers.facebook.com/docs/reference/plugins/like-box/
 @media only screen and (min-width: 90.063em){
   #thumbnails .picture {
     height: 550px;
+  }
+}
+
+.people-details .top-bar {
+  position: relative;
+  background-color: #1C7986;
+}
+
+.people-details .breadcrumbs {
+  padding-top: 40px;
+  color: #027180;
+}
+
+.people-details .breadcrumbs .icon-arrow-right {
+  padding-right: 10px;
+}
+
+.people-details .description, .person-quote .quote {
+  font-size: 18px;
+}
+
+.person-details img {
+  max-width: 100%;
+}
+
+.person-quote {
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+}
+
+.person-quote .icon-quote:before{
+  position: relative;
+  top: 20px;
+  font-size: 40px;
+  color: #027180;
+}
+
+.person-quote .quote {
+  font-size: 18px;
+  font-style: italic;
+  color: #027180;
+}
+
+.person-quote .separator {
+  margin-left: 5px;
+}
+
+.person-quote .quote-author:before {
+  content: "\2013";
+  margin-right: 5px;
+}
+
+.person-quote .quote-author {
+  font-size: 16px;
+}
+
+.section-person {
+  padding-bottom: 40px;
+}
+
+.section-person .columns:first-child {
+  padding-bottom: 20px;
+}
+
+/* MEDIUM */
+@media only screen and (min-width: 40.063em){
+  .person-quote .icon-quote:before{
+    font-size: 100px;
+  }
+  .people-details .description, .person-quote .quote {
+    font-size: 25px;
   }
 }
 

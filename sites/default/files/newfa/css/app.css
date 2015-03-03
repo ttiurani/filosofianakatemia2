@@ -1112,6 +1112,18 @@ https://developers.facebook.com/docs/reference/plugins/like-box/
   background-color: #1C7986;
 }
 
+.people-details .top-bar.expanded .title-area {
+  background-color: #1C7986;
+}
+
+.people-details .top-bar .icon-logo-fill-name:before{
+  color: #FFFFFF;
+}
+
+.people-details .top-bar .toggle-topbar.menu-icon > a > span:after{
+  box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF;
+}
+
 .people-details .breadcrumbs {
   padding-top: 40px;
   color: #027180;

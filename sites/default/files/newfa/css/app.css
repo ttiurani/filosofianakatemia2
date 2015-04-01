@@ -1049,7 +1049,9 @@ https://developers.facebook.com/docs/reference/plugins/like-box/
 #thumbnails #jp .picture {
   background-image: url('../img/jp-small.jpg');
 }
-
+#thumbnails #emilia .picture {
+  background-image: url('../img/emilia-small.jpg');
+}
 #thumbnails #santeri .picture {
   background-image: url('../img/santeri-small.jpg');
 }

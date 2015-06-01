@@ -1023,7 +1023,7 @@ https://developers.facebook.com/docs/reference/plugins/like-box/
   background-image: url('../img/villiam-small.jpg');
 }
 #thumbnails #villiam .picture h2 {
-  color: #000000;  
+  color: #000000;
 }
 #thumbnails #lauri .picture {
   background-image: url('../img/lauri-small.jpg');
@@ -1051,6 +1051,12 @@ https://developers.facebook.com/docs/reference/plugins/like-box/
 }
 #thumbnails #emilia .picture {
   background-image: url('../img/emilia-small.jpg');
+}
+#thumbnails #aleksej .picture {
+  background-image: url('../img/aleksej-small.jpg');
+}
+#thumbnails #aleksej .picture h2 {
+  color: #000000;
 }
 #thumbnails #santeri .picture {
   background-image: url('../img/santeri-small.jpg');

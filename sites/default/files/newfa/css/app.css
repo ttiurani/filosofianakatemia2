@@ -1010,6 +1010,13 @@ https://developers.facebook.com/docs/reference/plugins/like-box/
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 64.063em){
+  #thumbnails #placeholder .picture {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
 #thumbnails #karoliina .picture {
   background-image: url('../img/karoliina-small.jpg');
 }
@@ -1061,6 +1068,16 @@ https://developers.facebook.com/docs/reference/plugins/like-box/
 #thumbnails #santeri .picture {
   background-image: url('../img/santeri-small.jpg');
 }
+#thumbnails #placeholder .picture {
+  background-image: url('../img/placeholder-small.jpg');
+}
+#thumbnails #placeholder .picture h2, #thumbnails #placeholder .picture h4 {
+  color: #000000;
+}
+
+#thumbnails #placeholder .picture h2 {
+  margin-bottom: 50px;
+}
 
 #thumbnails {
   margin-top: 40px;
@@ -1106,12 +1123,19 @@ https://developers.facebook.com/docs/reference/plugins/like-box/
     margin-right: 0;
   }
 
+  #thumbnails #placeholder .picture h2 {
+    margin-bottom: 70px;
+  }
+
 }
 
 /* EXTRA LARGE */
 @media only screen and (min-width: 90.063em){
   #thumbnails .picture {
     height: 550px;
+  }
+  #thumbnails #placeholder .picture h2 {
+    margin-bottom: 80px;
   }
 }
 
